@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Current-Trend</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Current-Trend</h1>
+    <div class="navbar">
+      <div class="dev-credit">Developed by Vansh and Mayank</div>
+      <div class="nav-controls">
+        <button onclick="fetchNews('India')">Home</button>
+        <button onclick="fetchNews('Technology')">Trending</button>
+        <input id="search-text" type="text" placeholder="Search news..." />
+        <button id="search-button">Search</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="news-container"></div>
+
+  <template id="news-template">
+    <div class="news-card">
+      <img id="news-img" />
+      <h3 id="news-title"></h3>
+      <p id="news-desc"></p>
+      <small id="news-source"></small>
+    </div>
+  </template>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
